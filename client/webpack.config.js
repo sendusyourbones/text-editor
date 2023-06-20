@@ -19,10 +19,27 @@ module.exports = () => {
         template: './index.html',
         title: 'J.A.T.E.',
       }),
-      new WebpackPwaManifest(),
       new InjectManifest({
-        swSrc: './src-sw.js',
+        swSrc: path.resolve('./src-sw.js'),
         swDest: 'service-worker.js',
+      }),
+      new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E.',
+        description: 'Write and save your text',
+        background_color: '#7eb4e2',
+        theme_color: '#7eb4e2',
+        start_url: './',
+        publicPath: './',
+        icons: [
+          {
+            src: path.resolve('./src/images/logo.png'),
+            sizes: [96],
+            destination: path.join('assets', 'icons'),
+          },
+        ],
       }),
     ],
 

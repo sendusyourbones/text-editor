@@ -1,0 +1,17 @@
+{
+  "icons": [
+    {
+      "src": "./assets/icons/icon_96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Just Another Text Editor",
+  "short_name": "J.A.T.E.",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "./",
+  "description": "Write and save your text",
+  "background_color": "#7eb4e2",
+  "theme_color": "#7eb4e2"
+}

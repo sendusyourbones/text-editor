@@ -18,7 +18,7 @@ This application uses a number of packages to leverage webpack, service workers,
 ## Usage
 
 Instructions for using the application:
-- Navigate to the Just Another Text Editor application
+- Navigate to the [Just Another Text Editor](https://enigmatic-escarpment-54354-5069d77b2bb8.herokuapp.com/) application
 - Enter any text you want to work with and/or save
 - If you leave the page and come back, you should see the latest version of your text that you entered
 - Click the "Install" button to download the application to your device
@@ -34,6 +34,8 @@ The application leverages the following technologies:
 - [Express](https://www.npmjs.com/package/express) to generate the server
 
 See `/package.json`, `/client/package.json` and `/server/package.json` for the full list of packages used.
+
+I referred to the StackOverflow post [Webpack not found, deploying to Heroku](https://stackoverflow.com/questions/39457619/webpack-not-found-deploying-to-heroku) when troubleshooting an issue deploying to Heroku.
 
 ## License
 
